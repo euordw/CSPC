@@ -24,6 +24,6 @@ I learned how to configure Git, create a Conda environment, run automated tests 
 
 ## PW1 Lab B: Data, Plotting, and Automation
 
-**Nəticə:** Qrafik göstərdi ki, müşahidə edilən radioaktiv parçalanma məlumatları nəzəri analitik düsturla (əyri xəttlə) tamamilə üst-üstə düşür və uyğunlaşır.
+**Conclusion:** The plot showed that the observed radioactive decay data perfectly matches the theoretical analytical law (the smooth curve).
 
-**Avtomatlaşdırma:** Snakemake layihədəki ardıcıl işləri avtomatlaşdıran və yalnız giriş fayllarında dəyişiklik olduqda çıxış fayllarını yeniləyən bir alətdir.
+**Automation:** Snakemake is a tool that automates the pipeline steps, ensuring that output files are only rebuilt when their input files are changed[cite: 2].
