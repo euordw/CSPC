@@ -20,3 +20,10 @@ I set up a reproducible environment using Conda, version control with Git, wrote
 
 **Conclusion: **
 I learned how to configure Git, create a Conda environment, run automated tests with Pytest, and compare the execution time of pure Python loops vs NumPy arrays. Everything worked successfully.
+
+
+## PW1 Lab B: Data, Plotting, and Automation
+
+**Nəticə:** Qrafik göstərdi ki, müşahidə edilən radioaktiv parçalanma məlumatları nəzəri analitik düsturla (əyri xəttlə) tamamilə üst-üstə düşür və uyğunlaşır.
+
+**Avtomatlaşdırma:** Snakemake layihədəki ardıcıl işləri avtomatlaşdıran və yalnız giriş fayllarında dəyişiklik olduqda çıxış fayllarını yeniləyən bir alətdir.
