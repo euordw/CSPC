@@ -27,3 +27,10 @@ I learned how to configure Git, create a Conda environment, run automated tests 
 **Conclusion:** The plot showed that the observed radioactive decay data perfectly matches the theoretical analytical law (the smooth curve).
 
 **Automation:** Snakemake is a tool that automates the pipeline steps, ensuring that output files are only rebuilt when their input files are changed[cite: 2].
+
+## PW2 Lab A: Motion from Tracking Data
+
+**Results & Observations:**
+*   **Mean Acceleration:** The measured mean acceleration is approximately -9.81 m/s^2, which confirms the object is in free fall.
+*   **The Noise Problem:** The calculated acceleration is very noisy because it was obtained by applying the derivative twice to the position data. Differentiation amplifies the random measurement noise.
+*   **Integrating Back:** When integrating the noisy acceleration back up to velocity and position, the random noise partly cancelled out. The integration successfully suppressed the noise, and the recovered position matched the original measurements within about a metre.
