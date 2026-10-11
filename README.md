@@ -52,3 +52,33 @@ Create the environment for a given lab: `conda env create -f PW/Lab/environment.
 
 ### Part 5: Titration Equivalence Point
 * **Equivalence Volume:** $V_{\text{eq}} \approx 50.0\text{ mL}$, identified where the numerical derivative ($\frac{dpH}{dV}$) reaches its maximum value.
+
+## PW3: Data, Distributions, Testing, and Causation
+
+### Dataset 1: Heart Disease Analysis
+
+#### 1. Normality Verdicts
+* **age:** Approximately normal (bell-shaped distribution, p-value from Shapiro-Wilk test evaluated).
+* **chol:** Right-skewed (contains some extreme high values/outliers). Not strictly normal.
+* **trestbps:** Slightly right-skewed. Not strictly normal.
+* **thalach:** Approximately normal (left-skewed slightly, but reasonable for parametric tests).
+
+#### 2. Max Heart Rate Difference (Disease vs Healthy)
+* **Method:** Two-sample Student's t-test and Mann-Whitney U test.
+* **Result:** Patients with heart disease reach a significantly lower maximum heart rate (`thalach`) compared to healthy individuals ($p < 0.001$).
+* **Uncertainty:** The mean `thalach` for healthy patients is higher than for heart-disease patients, confirmed visually with standard error bars in `thalach_comparison.png`.
+
+#### 3. Age vs Max Heart Rate
+* **Correlation:** Negative correlation ($r \approx -0.42$).
+* **Interpretation:** As age increases, maximum achievable heart rate tends to decrease.
+
+---
+
+### Dataset 2: Chemical Exposure Mystery
+
+#### 1. Naive Analysis
+* Naively, **benzene** (or pollution-correlated chemical) showed a much stronger initial correlation with tumour malignancy than cadmium.
+
+#### 2. Confounding Variable Analysis
+* After controlling for `pollution_index` (restricting analysis to a fixed pollution range), the apparent correlation between benzene and malignancy disappeared/dropped significantly, while **cadmium** retained a consistent direct correlation with malignancy.
+* **Conclusion:** **Cadmium** is the true biological cause of tumour malignancy. Benzene only looked guilty naively because both benzene levels and malignancy scores were confounded by regional `pollution_index`.
